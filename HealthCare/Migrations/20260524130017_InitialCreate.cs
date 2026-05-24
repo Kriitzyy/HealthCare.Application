@@ -4,6 +4,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace HealthCare.Migrations
 {
     /// <inheritdoc />
@@ -68,6 +70,26 @@ namespace HealthCare.Migrations
                         column: x => x.BookedByPatientId,
                         principalTable: "Patients",
                         principalColumn: "Id");
+                });
+
+            migrationBuilder.InsertData(
+                table: "Caregivers",
+                columns: new[] { "Id", "CreatedAt", "Name", "Specialty" },
+                values: new object[,]
+                {
+                    { 1, new DateTime(2026, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "Dr. Anna Andersson", "Allmänmedicin" },
+                    { 2, new DateTime(2026, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "Dr. Björn Berg", "Kardiologi" },
+                    { 3, new DateTime(2026, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "Dr. Cecilia Carlsson", "Dermatologi" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "AppointmentSlots",
+                columns: new[] { "Id", "BookedByPatientId", "CaregiverId", "EndTime", "IsBooked", "StartTime" },
+                values: new object[,]
+                {
+                    { 1, null, 1, new DateTime(2026, 6, 1, 10, 0, 0, 0, DateTimeKind.Utc), false, new DateTime(2026, 6, 1, 9, 0, 0, 0, DateTimeKind.Utc) },
+                    { 2, null, 1, new DateTime(2026, 6, 1, 12, 0, 0, 0, DateTimeKind.Utc), false, new DateTime(2026, 6, 1, 11, 0, 0, 0, DateTimeKind.Utc) },
+                    { 3, null, 2, new DateTime(2026, 6, 2, 10, 0, 0, 0, DateTimeKind.Utc), false, new DateTime(2026, 6, 2, 9, 0, 0, 0, DateTimeKind.Utc) }
                 });
 
             migrationBuilder.CreateIndex(

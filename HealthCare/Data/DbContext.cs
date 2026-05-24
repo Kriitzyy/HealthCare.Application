@@ -24,21 +24,21 @@ public class ApplicationDbContext : DbContext
                 Id = 1,
                 Name = "Dr. Anna Andersson",
                 Specialty = "Allmänmedicin",
-                CreatedAt = new DateTime(2026, 1, 1)
+                CreatedAt = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc)
             },
             new Caregiver
             {
                 Id = 2,
                 Name = "Dr. Björn Berg",
                 Specialty = "Kardiologi",
-                CreatedAt = new DateTime(2026, 1, 1)
+                CreatedAt = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc)
             },
             new Caregiver
             {
                 Id = 3,
                 Name = "Dr. Cecilia Carlsson",
                 Specialty = "Dermatologi",
-                CreatedAt = new DateTime(2026, 1, 1)
+                CreatedAt = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc)
             }
         );
 
@@ -47,24 +47,24 @@ public class ApplicationDbContext : DbContext
             {
                 Id = 1,
                 CaregiverId = 1,
-                StartTime = new DateTime(2026, 6, 1, 9, 0, 0),
-                EndTime = new DateTime(2026, 6, 1, 10, 0, 0),
+                StartTime = new DateTime(2026, 6, 1, 9, 0, 0, DateTimeKind.Utc),
+                EndTime = new DateTime(2026, 6, 1, 10, 0, 0, DateTimeKind.Utc),
                 IsBooked = false
             },
             new AppointmentSlot
             {
                 Id = 2,
                 CaregiverId = 1,
-                StartTime = new DateTime(2026, 6, 1, 11, 0, 0),
-                EndTime = new DateTime(2026, 6, 1, 12, 0, 0),
+                StartTime = new DateTime(2026, 6, 1, 11, 0, 0, DateTimeKind.Utc),
+                EndTime = new DateTime(2026, 6, 1, 12, 0, 0, DateTimeKind.Utc),
                 IsBooked = false
             },
             new AppointmentSlot
             {
                 Id = 3,
                 CaregiverId = 2,
-                StartTime = new DateTime(2026, 6, 2, 9, 0, 0),
-                EndTime = new DateTime(2026, 6, 2, 10, 0, 0),
+                StartTime = new DateTime(2026, 6, 2, 9, 0, 0, DateTimeKind.Utc),
+                EndTime = new DateTime(2026, 6, 2, 10, 0, 0, DateTimeKind.Utc),
                 IsBooked = false
             }
         );
