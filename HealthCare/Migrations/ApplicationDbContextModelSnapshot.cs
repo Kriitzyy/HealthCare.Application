@@ -52,6 +52,32 @@ namespace HealthCare.Migrations
                     b.HasIndex("CaregiverId");
 
                     b.ToTable("AppointmentSlots");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CaregiverId = 1,
+                            EndTime = new DateTime(2026, 6, 1, 10, 0, 0, 0, DateTimeKind.Utc),
+                            IsBooked = false,
+                            StartTime = new DateTime(2026, 6, 1, 9, 0, 0, 0, DateTimeKind.Utc)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CaregiverId = 1,
+                            EndTime = new DateTime(2026, 6, 1, 12, 0, 0, 0, DateTimeKind.Utc),
+                            IsBooked = false,
+                            StartTime = new DateTime(2026, 6, 1, 11, 0, 0, 0, DateTimeKind.Utc)
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CaregiverId = 2,
+                            EndTime = new DateTime(2026, 6, 2, 10, 0, 0, 0, DateTimeKind.Utc),
+                            IsBooked = false,
+                            StartTime = new DateTime(2026, 6, 2, 9, 0, 0, 0, DateTimeKind.Utc)
+                        });
                 });
 
             modelBuilder.Entity("HealthcareAPI.Models.Caregiver", b =>
@@ -76,6 +102,29 @@ namespace HealthCare.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Caregivers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedAt = new DateTime(2026, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Dr. Anna Andersson",
+                            Specialty = "Allmänmedicin"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedAt = new DateTime(2026, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Dr. Björn Berg",
+                            Specialty = "Kardiologi"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreatedAt = new DateTime(2026, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Dr. Cecilia Carlsson",
+                            Specialty = "Dermatologi"
+                        });
                 });
 
             modelBuilder.Entity("HealthcareAPI.Models.Patient", b =>

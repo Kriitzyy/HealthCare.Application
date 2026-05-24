@@ -1,3 +1,11 @@
+C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\obj\Debug\net9.0\HealthCare.csproj.AssemblyReference.cache
+C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\obj\Debug\net9.0\HealthCare.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\obj\Debug\net9.0\HealthCare.AssemblyInfoInputs.cache
+C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\obj\Debug\net9.0\HealthCare.AssemblyInfo.cs
+C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\obj\Debug\net9.0\HealthCare.csproj.CoreCompileInputs.cache
+C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\obj\Debug\net9.0\HealthCare.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\obj\Debug\net9.0\HealthCare.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\bin\Debug\net9.0\appsettings.json
 C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\bin\Debug\net9.0\HealthCare.staticwebassets.endpoints.json
@@ -117,15 +125,6 @@ C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\
 C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\obj\Debug\net9.0\HealthCare.csproj.AssemblyReference.cache
-C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\obj\Debug\net9.0\rpswa.dswa.cache.json
-C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\obj\Debug\net9.0\HealthCare.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\obj\Debug\net9.0\HealthCare.AssemblyInfoInputs.cache
-C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\obj\Debug\net9.0\HealthCare.AssemblyInfo.cs
-C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\obj\Debug\net9.0\HealthCare.csproj.CoreCompileInputs.cache
-C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\obj\Debug\net9.0\HealthCare.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\obj\Debug\net9.0\HealthCare.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\obj\Debug\net9.0\HealthCare.sourcelink.json
 C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\Mnaka\OneDrive\Skrivbord\DotnetPortFolio\SchoolProjects\HealthCare.API\HealthCare\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json

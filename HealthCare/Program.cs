@@ -3,20 +3,26 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using HealthCare;
+using HealthcareAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to container.
+// Controllers + Swagger
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Database
+// DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// JWT Authentication
-var jwtKey = builder.Configuration["Jwt:Key"] ?? throw new Exception("JWT Key missing");
+// 🔥 FIX: register service
+builder.Services.AddScoped<AuthService>();
+
+// JWT
+var jwtKey = builder.Configuration["Jwt:Key"] 
+    ?? throw new Exception("JWT Key missing");
+
 var key = Encoding.UTF8.GetBytes(jwtKey);
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -38,7 +44,6 @@ builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
-// Configure pipeline
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -46,15 +51,17 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
 app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapControllers();
 
-// Auto-migrate database on startup
+// auto migrate
 using (var scope = app.Services.CreateScope())
 {
-    var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-    dbContext.Database.Migrate();
+    var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    db.Database.Migrate();
 }
 
 app.Run();
