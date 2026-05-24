@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCare", "HealthCare\HealthCare.csproj", "{94B10DC7-A388-4EC8-B71E-92090E84B7A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCareAPI.Tests", "HealthCareAPI.Tests\HealthCareAPI.Tests.csproj", "{7B1DD857-64B7-4B69-B7AB-43F40586BF2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,18 @@ Global
 		{94B10DC7-A388-4EC8-B71E-92090E84B7A2}.Release|x64.Build.0 = Release|Any CPU
 		{94B10DC7-A388-4EC8-B71E-92090E84B7A2}.Release|x86.ActiveCfg = Release|Any CPU
 		{94B10DC7-A388-4EC8-B71E-92090E84B7A2}.Release|x86.Build.0 = Release|Any CPU
+		{7B1DD857-64B7-4B69-B7AB-43F40586BF2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B1DD857-64B7-4B69-B7AB-43F40586BF2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B1DD857-64B7-4B69-B7AB-43F40586BF2F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7B1DD857-64B7-4B69-B7AB-43F40586BF2F}.Debug|x64.Build.0 = Debug|Any CPU
+		{7B1DD857-64B7-4B69-B7AB-43F40586BF2F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7B1DD857-64B7-4B69-B7AB-43F40586BF2F}.Debug|x86.Build.0 = Debug|Any CPU
+		{7B1DD857-64B7-4B69-B7AB-43F40586BF2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B1DD857-64B7-4B69-B7AB-43F40586BF2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B1DD857-64B7-4B69-B7AB-43F40586BF2F}.Release|x64.ActiveCfg = Release|Any CPU
+		{7B1DD857-64B7-4B69-B7AB-43F40586BF2F}.Release|x64.Build.0 = Release|Any CPU
+		{7B1DD857-64B7-4B69-B7AB-43F40586BF2F}.Release|x86.ActiveCfg = Release|Any CPU
+		{7B1DD857-64B7-4B69-B7AB-43F40586BF2F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
