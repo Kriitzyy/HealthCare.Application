@@ -8,11 +8,9 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
-// Swagger med JWT-stöd
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Healthcare API", Version = "v1" });
@@ -43,14 +41,11 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Register services
 builder.Services.AddScoped<AuthService>();
 
-// JWT Authentication
 var jwtKey = builder.Configuration["Jwt:Key"] 
     ?? throw new Exception("JWT Key missing");
 
@@ -75,7 +70,6 @@ builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
-// Configure pipeline
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -90,11 +84,11 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 
-// Auto migrate
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
     db.Database.Migrate();
 }
+
 
 app.Run();

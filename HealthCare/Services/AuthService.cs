@@ -1,10 +1,8 @@
-// HealthcareAPI/Services/AuthService.cs
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using HealthcareAPI.Models;
 using HealthcareAPI.DTOs;
 using HealthCare; 
 

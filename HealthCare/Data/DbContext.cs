@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using HealthcareAPI.Models;
+using HealthcareAPI;
 
 namespace HealthCare;
 

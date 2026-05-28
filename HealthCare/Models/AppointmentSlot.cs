@@ -1,4 +1,4 @@
-namespace HealthcareAPI.Models;
+namespace HealthCare;
 
 public class AppointmentSlot
 {

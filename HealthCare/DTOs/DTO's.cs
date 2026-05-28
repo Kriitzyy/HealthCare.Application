@@ -1,4 +1,3 @@
-// HealthcareAPI/DTOs/AuthDTOs.cs
 namespace HealthcareAPI.DTOs;
 
 public class RegisterRequest
