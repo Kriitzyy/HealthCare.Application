@@ -45,6 +45,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<AuthService>();
+builder.Services.AddScoped<BookingService>();
 
 var jwtKey = builder.Configuration["Jwt:Key"] 
     ?? throw new Exception("JWT Key missing");
