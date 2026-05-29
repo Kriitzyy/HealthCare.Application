@@ -16,19 +16,19 @@ public class RegisterTests
         
         var request = new RegisterRequest
         {
-            Name = "New Patient",
-            Email = "new@test.com",
-            Password = "MySecret123!"
+            Name = "My Test User",
+            Email = "MyTest@test.com",
+            Password = "SecretCode123!!"
         };
         
         await authService.RegisterAsync(request);
         
         var savedUser = await context.Patients
-            .FirstOrDefaultAsync(x => x.Email == "new@test.com");
+            .FirstOrDefaultAsync(x => x.Email == "MyTest@test.com");
         
         Assert.NotNull(savedUser);
-        Assert.Equal("New Patient", savedUser!.Name);
-        Assert.NotEqual("MySecret123!", savedUser.PasswordHash);
+        Assert.Equal("My Test User", savedUser!.Name);
+        Assert.NotEqual("SecretCode123!!", savedUser.PasswordHash);
     }
     
     [Fact]
@@ -41,15 +41,15 @@ public class RegisterTests
         var request = new RegisterRequest
         {
             Name = "Duplicate User",
-            Email = "existing@test.com",
-            Password = "AnyPassword123!"
+            Email = "existing@test.com",  // ← ÄNDRAD: använd seedad email
+            Password = "Password123!"
         };
         
         var exception = await Assert.ThrowsAsync<Exception>(
             () => authService.RegisterAsync(request)
         );
         
-        Assert.Equal("Email already exists", exception.Message);
+        Assert.Equal("Email already exists", exception.Message);  // ← ÄNDRAD: rätt meddelande
     }
     
     [Fact]
